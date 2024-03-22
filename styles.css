@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp2572168.jpg');
+    background-size: cover;
+    color: white; /* Change text color to white for better contrast */
+    text-align: center; /* Add this line to center the text */
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1 {
+    color: #8b0000; /* Change heading color to a shade of yellow for better visibility */
+}
+
+p {
+    color: #bd1414; /* Change paragraph color to a shade of light blue for better visibility */
+}
+#heart {
+    font-size: 3em;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+nav a {
+    margin-right: 10px;
+    color: #e1f5fe; /* Change navigation link color to a shade of light blue for better visibility */
+}
+
+#proposal {
+    margin-top: 20px;
+}
+
+#yesBtn {
+    background-color: #a82287; /* Change button color to a shade of yellow for better visibility */
+    color: #f093fb; /* Change button text color to a shade of pink for better visibility */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#yesBtn:active:after {
+    content: '❤';
+    font-size: 2em;
+    position: absolute;
+    animation: heart-pop 1s ease-out;
+}
+
+@keyframes heart-pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
