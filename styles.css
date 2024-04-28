@@ -8,23 +8,19 @@ body {
 
 h1, h2, p {
     text-align: center;
+    color: white; /* Change text color to white */
 }
 
-h1 {
-    color: #8b0000; /* Change heading color to a shade of yellow for better visibility */
-}
-
-p {
-    color: #bd1414; /* Change paragraph color to a shade of light blue for better visibility */
-}
 #heart {
     font-size: 3em;
     animation: bounce 1s infinite;
 }
+
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
 }
+
 nav a {
     margin-right: 10px;
     color: #e1f5fe; /* Change navigation link color to a shade of light blue for better visibility */
