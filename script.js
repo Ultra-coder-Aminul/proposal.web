@@ -1,7 +1,7 @@
 function responseYes() {
     document.getElementById("response").innerHTML = "I'm so happy to hear that! 😊";
     // Replace 'YourNumber' with your actual number
-    window.location.href = "https://wa.me/";
+    window.location.href = "https://wa.me/9862463845";
 }
 
 function responseNo() {
