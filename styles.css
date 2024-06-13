@@ -41,6 +41,12 @@ h1, h2, p {
     50% { transform: scale(1.5); }
     100% { transform: scale(1); }
 }
+.profile-picture img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%; /* This will make it round */
+    object-fit: cover; /* This will ensure the image covers the area without stretching */
+}
 
 @media only screen and (max-width: 600px) {
     body {
