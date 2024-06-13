@@ -1,47 +1,22 @@
 function responseYes() {
     document.getElementById("response").innerHTML = "I'm so happy to hear that! 😊";
-    // Replace 'YourNumber' with your actual number
-    window.location.href = "https://wa.me/9862463845";
-    // Show the Instagram icon
+    window.location.href = "https://wa.me/YourNumber"; // Replace 'YourNumber' with your actual number
     document.getElementById("instaLink").style.display = "block";
 }
 
 function responseNo() {
     document.getElementById("response").innerHTML = "I still love you. Please click 'Yes'.";
-    document.getElementById("hiddenYes").style.display = "block";
-    // Hide the Instagram icon
+    document.getElementById("yesButton").style.display = "block"; // Corrected ID for consistency
     document.getElementById("instaLink").style.display = "none";
-    // Add a playful message when she types 'no'
     alert("Oops! It seems like there was an error. Please try again by clicking 'Yes'.");
 }
 
 function freezeScreen() {
-    // Get the "No" button element
     const noButton = document.getElementById('noButton');
-
-    // Add a click event listener to the "No" button
-    noButton.addEventListener('click', freezeScreen);
-
-    // Disable pointer events on the body element
-    document.body.style.pointerEvents = 'none';
-    // Hide the Instagram icon when screen is frozen
-    document.getElementById("instaLink").style.display = "none";
-}
-function responseNo() {
-    document.getElementById("response").innerHTML = "I still love you. Please click 'Yes'.";
-
-    document.getElementById("hiddenYes").style.display = "block";
-    // Add a playful message when she types 'no'
-    alert("Oops! It seems like there was an error. Please try again by clicking 'Yes'.");
-}
-
-function freezeScreen() {
-    // Get the "No" button element
-    const noButton = document.getElementById('noButton');
-
-    // Add a click event listener to the "No" button
-    noButton.addEventListener('click', freezeScreen);
-
-    // Disable pointer events on the body element
-    document.body.style.pointerEvents = 'none';
+    noButton.addEventListener('click', function(event){
+        event.preventDefault();
+        document.body.style.pointerEvents = 'none';
+        document.getElementById("instaLink").style.display = "none";
+        alert("The screen is frozen, you cannot say no!");
+    });
 }
