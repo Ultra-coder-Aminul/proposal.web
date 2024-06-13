@@ -1,6 +1,6 @@
 function responseYes() {
     document.getElementById("response").innerHTML = "I'm so happy to hear that! 😊";
-    window.location.href = "https://wa.me/YourNumber"; // Replace 'YourNumber' with your actual number
+    window.location.href = "https://wa.me/9862463845"; // Replace 'YourNumber' with your actual number
     document.getElementById("instaLink").style.display = "block";
 }
 
